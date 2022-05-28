@@ -1,0 +1,18 @@
+package com.example.command.commands;
+
+import java.io.Serializable;
+import java.util.List;
+
+// класс для обновления списка пользователей
+public class UpdateUserListCommandData implements Serializable {
+
+    private final List<String> users;  // список пользователей
+
+    public UpdateUserListCommandData(List<String> users) {
+        this.users = users;
+    }
+
+    public List<String> getUsers() {
+        return users;
+    }
+}
